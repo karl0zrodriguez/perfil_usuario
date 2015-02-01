@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Description:
+        Estructura de la tabla perfil_access.
+-->
+<tabla>
+   <columna>
+      <nombre>pa_idperfil</nombre>
+      <tipo>int(15)</tipo>
+      <nulo>NO</nulo>
+   </columna>
+   <columna>
+      <nombre>pa_page</nombre>
+      <tipo>character varying(30)</tipo>
+      <nulo>NO</nulo>
+   </columna>
+   <restriccion>
+      <nombre>perfil_access_pkey</nombre>
+      <consulta>PRIMARY KEY (pa_idperfil,pa_page)</consulta>
+   </restriccion>
+   <restriccion>
+      <nombre>perfil_access_idperfil2</nombre>
+      <consulta>FOREIGN KEY (pa_idperfil) REFERENCES perfil (idperfil) ON DELETE CASCADE ON UPDATE CASCADE</consulta>
+   </restriccion>
+   <restriccion>
+      <nombre>perfil_access_page2</nombre>
+      <consulta>FOREIGN KEY (pa_page) REFERENCES fs_pages (name) ON DELETE CASCADE ON UPDATE CASCADE</consulta>
+   </restriccion>
+</tabla>

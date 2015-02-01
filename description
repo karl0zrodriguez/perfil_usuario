@@ -1,0 +1,3 @@
+-Crea la Página Admin->Perfiles Usuarios, para crear nuevos perfiles de usuarios y asignar las páginas que conforman cada perfil.<br/>
+-Modifica el funcionamiento de Admin->Usuarios, en el formulario para crear un nuevo usuario se puede asignar un perfil al nuevo usuario.<br/>
+-Otro cambio esta al editar un usuario, al final de la pestaña Autorizar al lado del boton "Desmarcar todo" se agrega un boton por cada perfil creado para cambiar las paginas del usuario.

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : perfil.xml
+    Description:
+        Estructura de la tabla perfil.
+-->
+<tabla>
+<columna>
+    <nombre>idperfil</nombre>
+    <tipo>int(15)</tipo>
+    <nulo>NO</nulo>
+</columna>
+<columna>
+    <nombre>perfil</nombre>
+    <tipo>varchar(10)</tipo>
+    <nulo>NO</nulo>
+</columna>
+<columna>
+    <nombre>descripcion</nombre>
+    <tipo>character varying(100)</tipo>
+    <nulo>YES</nulo>
+</columna>
+<restriccion>
+    <nombre></nombre>
+    <consulta>UNIQUE (perfil)</consulta>
+</restriccion>
+<restriccion>
+    <nombre>idperfil_pkey</nombre>
+    <consulta>PRIMARY KEY (idperfil)</consulta>
+</restriccion>
+</tabla>
